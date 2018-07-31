@@ -18,7 +18,7 @@ class Hash
   #     arr.flatten
   # end
   
-  # After consulting with the 
+  # After consulting with the doc Gods I have found a single line solution splat == spread => isArray == true
   def keys_of(*arguments)
     select{|k, v| arguments.include?(v)}.keys
   end
